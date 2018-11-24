@@ -1,6 +1,9 @@
 
+//Code for this section was taken from the service worker lesson in udacity.S
+
 var staticCacheName = 'restaurant-static-v1';
 
+//creates cache for service worker
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(staticCacheName).then(function(cache) {

@@ -1,3 +1,5 @@
+//service worker code from udacity
+
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js')
   .then(function() {
