@@ -158,7 +158,7 @@ nav h1 a {
   min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -282,17 +282,41 @@ nav h1 a {
 /* ============Media Queries / Responsive Design ======= */
 
 /* Breakpoints are from Bootstrap */
-
+/* This seems to be a slightly messy fix at the moment, we have to update it */
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (max-width: 576px) { 
+  #reviews-container {
+  width: 30%;
+}
+#restaurant-container {
+  width: 40%;
+}
+
   #restaurant-hours td {
     font-size: 11px;
   }
   #restaurant-address {
   font-size: 10pt;
 }
- }
 
+
+ }
+@media (min-width: 577px) { 
+  #reviews-container {
+  width: 35%;
+}
+#restaurant-container {
+  width: 40%;
+}
+
+  #restaurant-hours td {
+    font-size: 11px;
+  }
+  #restaurant-address {
+  font-size: 10pt;
+}
+
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #restaurant-name {
@@ -301,6 +325,9 @@ nav h1 a {
   #restaurants-list li {
     width: 37%;
   }
+  #restaurant-container {
+  width: 45%;
+}
   #reviews-container {
   width: 45%;
 }
@@ -322,6 +349,9 @@ nav h1 a {
   }
   #restaurant-address {
   font-size: 15pt;
+}
+#restaurant-container {
+  width: 50%;
 }
  }
 
